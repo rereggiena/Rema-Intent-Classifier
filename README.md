@@ -1,4 +1,4 @@
-# Rema Intent Classifier
+# Rema Intent Classifier Chatbot
 
 We made a Chatbot that can recognize a user input's intents (limited to the context of our Dataset, which centers around student grade information) based off of a .json file filled with pre-generated intents and (possible) user input patterns.
 

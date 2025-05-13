@@ -1,0 +1,559 @@
+{
+  "intents": [    
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi", "halo halo hi", "hi hi hello", "hey hey",
+        "yo", "hey", "yo whatsup", "whats up", "hey there", "heya",
+        "Hai",
+        "Halo",
+        "Selamat pagi",
+        "Selamat siang",
+        "Selamat sore",
+        "Apa kabar?",
+        "Permisi",
+        "Pagi semuanya",
+        "Halo bot",
+        "Hai teman",
+        "Selamat datang",
+        "Assalamualaikum",
+        "Hai, boleh tanya?",
+        "Saya ingin mulai",
+        "Ada orang di sini?"
+      ],
+      "responses": ["Halo! Ada yang bisa saya bantu?", "Hai, senang bertemu denganmu!", "Selamat datang, ada yang ingin kamu tanyakan?"]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Sampai jumpa", "Dadah bot", "Dadah yaa", "Bye",
+        "Goodbye", "Byeee",
+        "Dadah",
+        "Selamat tinggal",
+        "Sampai nanti",
+        "Sampai besok",
+        "Saya pamit dulu",
+        "Sampai ketemu lagi",
+        "Saya pergi dulu ya",
+        "Terima kasih, sampai jumpa",
+        "Bye bye",
+        "Saya keluar dulu",
+        "Selesai dulu ya",
+        "Udahan dulu",
+        "Oke, saya cabut",
+        "Sudahi dulu ya"
+      ],
+      "responses": ["Sampai jumpa lagi!", "Terima kasih sudah menggunakan layanan ini!", "Semoga harimu menyenangkan!"]
+    },
+    
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Terima kasih",
+        "Makasih ya",
+        "Thanks",
+        "Thank you",
+        "Tengkyu",
+        "Terima kasih banyak",
+        "Makasih banget",
+        "Trimakasih",
+        "Trims",
+        "Saya sangat berterima kasih",
+        "Terima kasih atas bantuannya",
+        "Makasih banyak ya",
+        "Thanks ya bot",
+        "Terima kasih sebelumnya",
+        "Bot, makasih ya"
+      ],
+      "responses": ["Sama-sama!", "Dengan senang hati!", "Kapan saja!"]
+    },
+    
+    {
+      "tag": "nilai_total_terendah",
+      "patterns": [
+        "Siapa yang nilai totalnya paling rendah?", "Nilai total terendah siapa?", "Siapa yang dapat nilai akhir paling kecil?", "Total skor paling rendah siapa?", "Siapa ranking paling bawah?",
+        "Siapa yang skornya paling kecil?", "Siapa dengan total nilai terendah?", "Siapa yang nilainya jelek banget?", "Siapa nilai totalnya anjlok?", "Nilai total siapa yang paling rendah?",
+        "Skor akhir terendah siapa?", "Siapa yang di posisi terbawah nilai total?", "Nilai total terburuk siapa?", "Siapa yang dapat nilai total paling rendah di kelas?", "Siapa punya total skor paling rendah?",
+        "Siapa dengan nilai akhir terendah?", "Siapa peringkat bawah total nilai?", "Nilai minimal total siapa?", "Total skor terendah didapat siapa?", "Siapa yang nilai totalnya nyungsep?",
+        "Siapa yang performanya paling rendah?", "Siapa yang gagal total?", "Nilai total paling kecil dimiliki siapa?", "Siapa yang drop banget nilainya?", "Siapa siswa dengan nilai total terendah?",
+        "Siapa yang jatuh di total skor?", "Nilai total siapa menyedihkan?", "Siapa yang terpuruk nilainya?", "Siapa yang paling hancur secara total nilai?", "Total nilai siapa paling jeblok?",
+        "Siapa yang nilainya gak nyampe total?", "Siapa yang ranking terakhir dari total nilai?", "Siapa yang punya total score terendah?", "Nilai akhir paling rendah siapa?", "Siapa siswa dengan skor akhir terendah?",
+        "Siapa yang total nilainya minim banget?", "Siapa dapat nilai total paling buruk?", "Total nilai siswa siapa paling rendah?", "Nilai total siapa di dasar?", "Siapa yang paling rendah performa keseluruhannya?"
+      ],
+      "responses": ["Siswa dengan nilai total terendah adalah: {email} dengan skor total {value}."]
+    },
+
+    {
+      "tag": "nilai_total_tertinggi",
+      "patterns": [
+        "Siapa yang nilai totalnya paling tinggi?", "Nilai total tertinggi siapa?", "Siapa yang dapat nilai akhir tertinggi?", "Total skor paling tinggi siapa?", "Siapa ranking paling atas?",
+        "Siapa yang skornya paling besar?", "Siapa dengan total nilai tertinggi?", "Siapa yang unggul di total nilai?", "Siapa juara nilai total?", "Nilai total siapa yang paling tinggi?",
+        "Skor akhir tertinggi siapa?", "Siapa ranking pertama di total nilai?", "Nilai total terbaik siapa?", "Siapa yang dapat nilai penuh?", "Siapa punya total skor paling tinggi?",
+        "Siapa dengan nilai akhir paling tinggi?", "Siapa peringkat atas total nilai?", "Nilai maksimal total siapa?", "Total skor tertinggi didapat siapa?", "Siapa yang dapat skor sempurna?",
+        "Siapa yang unggul di keseluruhan nilai?", "Siapa dengan skor total terbesar?", "Siapa yang nilainya paling oke secara keseluruhan?", "Nilai tertinggi di semua aspek siapa?", "Siapa siswa dengan nilai tertinggi total?",
+        "Siapa yang dominan di total skor?", "Nilai total tertinggi dimiliki siapa?", "Siapa yang paling unggul nilainya?", "Siapa yang menang total nilai?", "Total nilai siapa luar biasa?",
+        "Siapa yang paling tinggi performanya?", "Siapa yang skornya juara?", "Siapa yang nilainya nyaris sempurna?", "Nilai total tertinggi di kelas siapa?", "Siapa yang gak ada saingan di nilai total?",
+        "Nilai akhir tertinggi siapa?", "Siapa yang nilai totalnya bagus banget?", "Siapa siswa dengan total nilai paling tinggi?", "Siapa dapat skor total maksimal?", "Siapa yang top skor nilai total?"
+      ],
+      "responses": ["Siswa dengan nilai total tertinggi adalah: {email} dengan skor total {value}."]
+    },
+    
+    {
+      "tag": "jumlah_perempuan",
+      "patterns": [
+        "Ada berapa siswa perempuan?", "Ada berapa siswa wanita?", "ada berapa jumlah wanita?", "ada berapa wanita?",
+        "jumlah siswa wanita berapa?", "ada berapa jumlah siswa wanita?",
+        "Jumlah siswi berapa?",
+        "Berapa banyak siswa cewek?",
+        "Berapa siswi?",
+        "Tunjukkan jumlah siswi",
+        "Jumlah murid perempuan berapa?",
+        "Siswa perempuan ada berapa?",
+        "Cewek berapa orang?",
+        "Berapa total siswi?",
+        "Bisa kasih tahu berapa murid cewek?",
+        "Yang perempuan ada berapa?",
+        "Berapa jumlah siswi keseluruhan?",
+        "Tolong tampilkan jumlah siswa perempuan",
+        "Perempuan di kelas ini ada berapa?",
+        "Jumlah cewek dalam data berapa?"
+      ],
+      "responses": ["Jumlah siswa perempuan adalah: {value}."]
+    },
+
+    {
+      "tag": "jumlah_laki",
+      "patterns": [
+        "ada berapa pria?", "Jumlah siswa pria", "Ada berapa jumlah pria?", "Berapa jumlah siswa pria?",
+        "Ada berapa siswa laki-laki?",
+        "Jumlah siswa cowok?",
+        "Berapa banyak siswa laki?",
+        "Siswa cowo ada berapa?",
+        "Cowoknya ada berapa?",
+        "Jumlah murid laki-laki berapa?",
+        "Tunjukkan jumlah siswa pria",
+        "Laki-laki berapa orang?",
+        "Berapa total siswa cowo?",
+        "Bisa kasih tahu berapa murid laki-laki?",
+        "Yang cowo ada berapa?",
+        "Berapa jumlah siswa pria?",
+        "Tolong tampilkan jumlah siswa laki-laki",
+        "Laki-laki di kelas ini ada berapa?",
+        "Jumlah cowo dalam data berapa?"
+      ],
+      "responses": ["Jumlah siswa laki-laki adalah: {value}."]
+    },
+    
+    {
+      "tag": "usia_rata",
+      "patterns": [
+        "Berapa rata-rata usia siswa?",
+        "Umur rata-rata siswa berapa?",
+        "Rata-rata umur siswa?",
+        "Berapa usia rata-rata?",
+        "Umur siswa rata-rata?",
+        "Usia rata-rata mereka berapa?",
+        "Rata-rata umur murid?",
+        "Usia rata-rata?",
+        "Tolong beri tahu usia rata-rata siswa",
+        "Saya ingin tahu rata-rata umur siswa",
+        "Berapa umur rata-rata dari semua siswa?",
+        "Bisa sebutkan usia rata-rata murid?",
+        "Rata-rata umur keseluruhan berapa?",
+        "Berapa kira-kira rata-rata usia siswa?",
+        "Usia tengah para siswa itu berapa?"
+      ],
+      "responses": ["Rata-rata usia siswa adalah: {value}."]
+    },
+
+    {
+      "tag": "usia_tertua",
+      "patterns": [
+        "siapa yang memiliki usia tertua", "siapa yang paling tua usianya", "siapa yang usia tertuanya", "siapa yang paling senior di kelas", "siapa yang paling tua di antara siswa",
+        "siapa yang memiliki usia paling tua", "siapa yang usia tertua di kelas", "siapa yang paling tua usianya di kelas", "siapa yang sudah lebih tua", "siapa yang usia terbesarnya",
+        "siapa yang paling tua di kelas ini", "siapa yang paling senior di kelas ini", "siapa yang memiliki usia paling tua di kelas", "siapa yang lebih tua dari yang lain", "siapa yang lebih tua di antara teman-temannya",
+        "siapa yang sudah lebih tua dibandingkan yang lain", "siapa yang usianya paling tua di semester ini", "siapa yang paling tua di kelas ini", "siapa yang lebih senior di kelas", "siapa yang sudah paling tua",
+        "siapa yang punya usia tertua di kelas ini", "siapa yang usianya paling tinggi", "siapa yang paling senior di semester ini", "siapa yang lebih tua di kelas", "siapa yang paling tua di seluruh kelas",
+        "siapa yang usia tertuanya paling tinggi", "siapa yang lebih tua di antara semua siswa", "siapa yang usia tertua di semester ini", "siapa yang paling senior dalam kelas ini", "siapa yang memiliki usia tertua di semester ini",
+        "siapa yang usia tertua di antara semua siswa", "siapa yang memiliki usia paling tua di semester ini", "siapa yang paling senior di antara teman-teman", "siapa yang paling tua dibandingkan teman-temannya", "siapa yang usianya paling tinggi di kelas",
+        "siapa yang memiliki usia tertua di antara teman-temannya", "siapa yang paling tua dalam kelas", "siapa yang paling senior dalam semester ini", "siapa yang memiliki usia tertua di antara seluruh kelas"
+      ],
+      "responses": ["Siswa paling tua adalah: {email} dengan usia {value}."]
+    },
+
+    {
+      "tag": "usia_termuda",
+      "patterns": [
+        "siapa yang memiliki usia termuda", "siapa yang paling muda usianya", "siapa yang usia termudanya", "siapa yang paling muda di kelas", "siapa yang paling muda di antara siswa",
+        "siapa yang memiliki usia paling muda", "siapa yang usia termuda di kelas", "siapa yang paling muda usianya di kelas", "siapa yang lebih muda", "siapa yang usia terkecil",
+        "siapa yang paling muda di kelas ini", "siapa yang paling junior di kelas ini", "siapa yang memiliki usia paling muda di kelas", "siapa yang lebih muda dari yang lain", "siapa yang lebih muda di antara teman-temannya",
+        "siapa yang sudah lebih muda dibandingkan yang lain", "siapa yang usianya paling muda di semester ini", "siapa yang paling muda di kelas ini", "siapa yang lebih junior di kelas", "siapa yang sudah paling muda",
+        "siapa yang punya usia termuda di kelas ini", "siapa yang usianya paling rendah", "siapa yang paling junior di semester ini", "siapa yang lebih muda di kelas", "siapa yang paling muda di seluruh kelas",
+        "siapa yang usia termudanya paling rendah", "siapa yang lebih muda di antara semua siswa", "siapa yang usia termuda di semester ini", "siapa yang paling junior dalam kelas ini", "siapa yang memiliki usia termuda di semester ini",
+        "siapa yang usia termuda di antara semua siswa", "siapa yang memiliki usia paling muda di semester ini", "siapa yang paling junior di antara teman-teman", "siapa yang paling muda dibandingkan teman-temannya", "siapa yang usianya paling rendah di kelas",
+        "siapa yang memiliki usia termuda di antara teman-temannya", "siapa yang paling muda dalam kelas", "siapa yang paling junior dalam semester ini", "siapa yang memiliki usia termuda di antara seluruh kelas"
+      ],
+      "responses": ["Siswa termuda adalah: {email} dengan usia {value}."]
+    },
+
+    {
+      "tag": "kuis_tertinggi",
+      "patterns": [
+        "kuis nilai tertinggi", "kuis tertinggi", "nilai kuis paling besar", "nilai kuis paling bagus",
+        "nilai kuis terbagus", "nilai kuis yang paling tinggi", "siapa yang punya nilai kuis paling tinggi",
+        "siswa yang punya nilai tertinggi di kelas ini", "siapa yang punya sih nilai kuis paling bagus",
+        "Siapa yang mendapat nilai kuis tertinggi?",
+        "Nilai kuis paling tinggi siapa?",
+        "Skor kuis tertinggi siapa?",
+        "Siapa top scorer kuis?",
+        "Kuis tertinggi diperoleh siapa?",
+        "Tunjukkan siswa dengan nilai kuis paling tinggi",
+        "Nilai tertinggi di kuis siapa?",
+        "Siapa yang paling bagus nilai kuisnya?",
+        "Siapa yang nilainya paling tinggi di kuis?",
+        "Siapa murid dengan skor kuis tertinggi?",
+        "Nilai tertinggi dari kuis didapat siapa?",
+        "Kuis siapa yang nilainya paling bagus?",
+        "Sebutkan yang dapat nilai kuis tertinggi",
+        "Siapa yang mencetak nilai tertinggi di kuis?",
+        "Tolong tampilkan siswa dengan nilai kuis tertinggi"
+      ],
+      "responses": ["Siswa dengan nilai kuis tertinggi adalah: {email} dengan skor kuis {value}."]
+    },
+    
+    {
+      "tag": "kuis_terendah",
+      "patterns": [
+        "Siapa yang nilai kuisnya paling rendah?", "Nilai kuis terkecil siapa?", "Siapa yang dapat kuis terendah?", "Kuis paling rendah siapa?", "Siapa yang skornya terendah di kuis?",
+        "Siapa nilai kuisnya jelek banget?", "Siapa yang nilai kuisnya kecil?", "Nilai kuis siapa yang paling rendah?", "Kuis siapa yang paling buruk?", "Siapa yang hancur di kuis?",
+        "Siapa ranking bawah di kuis?", "Siapa dengan skor kuis terendah?", "Nilai kuis terkecil punya siapa?", "Siapa yang gagal di kuis?", "Siapa yang kuisnya paling parah?",
+        "Siapa dapat nilai kuis terkecil?", "Siapa yang kuisnya paling jelek?", "Skor kuis siapa yang paling kecil?", "Siapa yang dapet kuis paling rendah?", "Siapa yang di bawah di kuis?",
+        "Kuis siapa nilainya paling rendah?", "Siapa yang nilainya anjlok di kuis?", "Skor terendah kuis siapa?", "Siapa yang nilai kuisnya paling rendah di kelas?", "Siapa yang kuisnya kacau banget?",
+        "Nilai kuis siapa paling bawah?", "Siapa punya kuis dengan nilai terkecil?", "Siapa yang dapat skor kuis paling rendah?", "Siapa yang kuisnya kurang bagus banget?", "Siapa yang sering gagal kuis?",
+        "Tunjukkan yang nilai kuisnya paling rendah", "Siapa yang paling jelek saat kuis?", "Siapa yang hasil kuisnya rendah banget?", "Siapa yang buruk di kuis?", "Siapa siswa dengan kuis terendah?",
+        "Siapa yang kuisnya paling gak bagus?", "Siapa nilai kuisnya gak nyampe?", "Siapa yang kuisnya jauh di bawah?", "Nilai kuis siapa paling jatuh?", "Siapa dengan nilai kuis paling kecil?"
+      ],
+      "responses": ["Siswa dengan nilai kuis terendah adalah: {email} dengan skor kuis {value}."]
+    },
+
+    {
+      "tag": "kuis_rata_rata",
+      "patterns": [
+        "Berapa rata-rata nilai kuis?",
+        "Nilai kuis rata-rata berapa?",
+        "Rata-rata kuis siswa?",
+        "Tunjukkan rata-rata nilai kuis",
+        "Nilai kuis keseluruhan rata-rata berapa?",
+        "Rata-rata skor kuis berapa?",
+        "Skor rata-rata dari kuis?",
+        "Saya ingin tahu rata-rata nilai kuis siswa",
+        "Bisa sebutkan nilai kuis rata-rata?",
+        "Nilai kuis umumnya berapa?",
+        "Berapa nilai rata-rata untuk kuis?",
+        "Tolong tampilkan rata-rata skor kuis",
+        "Kira-kira berapa nilai rata-rata kuis?",
+        "Berapa nilai tengah dari kuis?",
+        "Apakah kamu tahu rata-rata kuis siswa?"
+      ],
+      "responses": ["Rata-rata nilai kuis adalah {value}"]
+    },
+
+    {
+      "tag": "tugas_terendah",
+       "patterns": [
+          "siapa yang mendapatkan nilai tugas terendah", "tugas terendah siapa", "siapa yang nilai tugasnya paling rendah", "nilai tugas terendah siapa", "siapa yang paling buruk nilai tugasnya",
+          "siapa yang dapat nilai tugas terendah", "siapa yang punya nilai tugas terendah", "nilai tugas siapa yang paling rendah", "siapa yang tugasnya paling rendah", "siapa yang mendapat nilai tugas paling rendah",
+          "siapa yang punya nilai tugas terendah di kelas", "siapa yang dapat nilai tugas terendah di kelas", "siapa yang tugasnya paling buruk", "siapa yang tugasnya paling rendah di kelas", "siapa yang punya tugas terendah",
+          "siapa yang mendapatkan nilai tugas terendah di semester ini", "siapa yang tugasnya paling jelek", "siapa yang mendapat nilai tugas terendah di semester ini", "siapa yang paling buruk mengerjakan tugas", "siapa yang tugasnya paling buruk di semester ini",
+          "siapa yang nilai tugasnya paling rendah di semester ini", "siapa yang paling jarang dapat nilai tugas tinggi", "siapa yang tugasnya paling rendah di semester ini", "siapa yang nilai tugasnya terendah di kelas", "siapa yang tugasnya paling jelek di kelas",
+          "siapa yang nilai tugasnya paling buruk", "siapa yang tugasnya paling jelek di semester ini", "siapa yang mendapat tugas terendah", "siapa yang punya nilai tugas terendah di semester ini", "siapa yang paling rendah dalam mengerjakan tugas",
+          "siapa yang tugasnya paling buruk di semester ini", "siapa yang paling tidak konsisten dalam mengerjakan tugas", "siapa yang tugasnya paling buruk di kelas ini", "siapa yang nilai tugasnya paling rendah di kelas ini", "siapa yang tugasnya paling kurang",
+          "siapa yang tugasnya paling tidak memuaskan", "siapa yang tugasnya paling tidak bagus", "siapa yang nilai tugasnya paling rendah di semester ini", "siapa yang paling jarang mendapat nilai tugas tinggi"
+        ],
+      "responses": ["Siswa dengan nilai tugas terendah adalah: {email} dengan skor tugas {value}."]
+    },
+    
+    {
+      "tag": "tugas_tertinggi",
+      "patterns": [
+        "siapa yang mendapatkan nilai tugas tertinggi", "tugas tertinggi siapa", "siapa yang paling tinggi nilai tugasnya", "nilai tugas tertinggi siapa", "siapa yang nilai tugasnya paling bagus",
+        "siapa yang dapat tugas terbaik", "siapa yang punya nilai tugas tertinggi", "nilai tugas terbaik siapa", "siapa yang paling hebat dalam tugas", "siapa yang dapat nilai tugas paling tinggi",
+        "siapa yang tugasnya paling bagus", "siapa yang dapat tugas terbaik di kelas", "siapa yang punya tugas terbaik", "nilai tugas siapa yang paling tinggi", "siapa yang paling sempurna nilai tugasnya",
+        "siapa yang punya nilai tugas terbaik", "siapa yang mendapatkan nilai tugas terbaik di kelas", "siapa yang tugasnya paling baik", "siapa yang mendapatkan nilai tugas terbaik di semester ini", "siapa yang paling rajin mengerjakan tugas",
+        "siapa yang tugasnya paling tinggi di semester ini", "siapa yang mendapatkan nilai tugas paling sempurna", "siapa yang tugasnya paling sempurna", "siapa yang punya nilai tugas tertinggi di kelas ini", "siapa yang mendapat nilai tugas terbaik di semester ini",
+        "siapa yang punya tugas paling sempurna", "siapa yang nilai tugasnya paling tinggi di kelas ini", "siapa yang paling bagus dalam mengerjakan tugas", "siapa yang nilai tugasnya terbaik", "siapa yang paling hebat mengerjakan tugas",
+        "siapa yang punya nilai tugas tertinggi di semester ini", "siapa yang paling sering mendapat nilai tugas tinggi", "siapa yang tugasnya paling tinggi di kelas ini", "siapa yang tugasnya paling bagus di semester ini", "siapa yang nilai tugasnya terbaik di semester ini",
+        "siapa yang tugasnya paling bagus di kelas ini", "siapa yang paling konsisten mendapatkan nilai tugas tinggi", "siapa yang tugasnya paling memuaskan", "siapa yang paling sukses dalam mengerjakan tugas"
+      ],
+      "responses": ["Siswa dengan nilai tugas tertinggi adalah: {email} dengan skor tugas {value}."]
+    },
+
+    {
+      "tag": "partisipasi_tertinggi",
+      "patterns": [
+        "siapa yang partisipasinya tertinggi", "siapa yang punya partisipasi tertinggi", "siapa yang keaktifannya tertinggi", "siapa dengan keaktifan tertinggi", "siapa dengan partisipasi tertinggi",
+        "siapa yang memiliki tingkat partisipasi tertinggi", "siapa yang memiliki keaktifan tertinggi", "siapa yang partisipasinya paling tinggi", "siapa yang keaktifannya paling tinggi", "siapa yang kontribusinya paling tinggi",
+        "siapa yang aktivitasnya paling tinggi", "siapa yang paling tinggi partisipasinya", "siapa yang paling tinggi keaktifannya", "siapa yang kontribusi kelasnya paling tinggi", "siapa yang tingkat partisipasinya paling tinggi",
+        "siapa dengan kontribusi tertinggi", "siapa yang menunjukkan partisipasi paling tinggi", "siapa yang menunjukkan keaktifan paling tinggi", "siapa yang partisipasi kelasnya tertinggi", "siapa yang keaktifan di kelasnya tertinggi",
+        "siapa yang kontribusi keaktifan paling tinggi", "siapa yang interaksinya paling tinggi", "siapa yang keterlibatannya paling tinggi", "siapa yang paling aktif di kelas", "siapa yang partisipasinya sangat tinggi",
+        "siapa yang paling sering aktif", "siapa yang paling sering berpartisipasi", "siapa yang partisipasi kelasnya paling tinggi", "siapa yang paling menunjukkan keaktifan", "siapa yang aktifnya paling tinggi",
+        "siapa yang paling sering terlibat di kelas", "siapa yang menunjukkan keaktifan tertinggi", "siapa yang menunjukkan partisipasi tertinggi", "siapa yang aktivitas kelasnya paling tinggi", "siapa yang sangat tinggi keaktifannya",
+        "siapa yang sangat tinggi partisipasinya", "siapa yang memiliki kontribusi tertinggi", "siapa yang paling banyak berpartisipasi", "siapa yang kontribusi partisipasinya paling tinggi", "siapa yang partisipasi akademiknya paling tinggi"
+      ],
+      "responses": ["Siswa dengan partisipasi tertinggi adalah: {email} dengan skor partisipasi {value}."]
+    },
+    
+    {
+      "tag": "partisipasi_terendah",
+      "patterns": [
+        "siapa yang partisipasinya terendah", "siapa yang punya partisipasi terendah", "siapa yang keaktifannya terendah", "siapa dengan keaktifan terendah", "siapa dengan partisipasi terendah",
+        "siapa yang memiliki tingkat partisipasi terendah", "siapa yang memiliki keaktifan terendah", "siapa yang partisipasinya paling rendah", "siapa yang keaktifannya paling rendah", "siapa yang kontribusinya paling rendah",
+        "siapa yang aktivitasnya paling rendah", "siapa yang paling rendah partisipasinya", "siapa yang paling rendah keaktifannya", "siapa yang kontribusi kelasnya paling rendah", "siapa yang tingkat partisipasinya paling rendah",
+        "siapa dengan kontribusi terendah", "siapa yang menunjukkan partisipasi paling rendah", "siapa yang menunjukkan keaktifan paling rendah", "siapa yang partisipasi kelasnya terendah", "siapa yang keaktifan di kelasnya terendah",
+        "siapa yang kontribusi keaktifan paling rendah", "siapa yang interaksinya paling rendah", "siapa yang keterlibatannya paling rendah", "siapa yang jarang aktif dan partisipasinya terendah", "siapa yang partisipasinya sangat rendah",
+        "siapa yang paling tidak aktif", "siapa yang paling jarang aktif", "siapa yang paling jarang berpartisipasi", "siapa yang partisipasi kelasnya paling rendah", "siapa yang paling tidak menunjukkan keaktifan",
+        "siapa yang aktifnya paling rendah", "siapa yang paling jarang terlibat di kelas", "siapa yang menunjukkan keaktifan terendah", "siapa yang menunjukkan partisipasi terendah", "siapa yang aktivitas kelasnya paling rendah",
+        "siapa yang sangat rendah keaktifannya", "siapa yang sangat rendah partisipasinya", "siapa yang memiliki kontribusi terendah", "siapa yang paling sedikit berpartisipasi", "siapa yang kontribusi partisipasinya paling rendah"
+      ],
+      "responses": ["Siswa dengan partisipasi terendah adalah: {email} dengan skor partisipasi {value}."]
+    },
+
+    {
+      "tag": "partisipasi_rata_rata",
+      "patterns": [
+        "berapa rata-rata partisipasi siswa", "rata-rata keaktifan kelas berapa", "berapa nilai partisipasi rata-rata", "berapa rata-rata keaktifan di kelas", "berapa rata-rata anak-anak ikut diskusi",
+        "rata-rata partisipasi di kelas berapa", "berapa angka partisipasi rata-rata", "berapa rata-rata anak aktif", "seberapa aktif rata-rata siswa", "berapa persen keaktifan siswa",
+        "berapa rata-rata keikutsertaan", "berapa partisipasi kelas secara rata-rata", "berapa nilai keaktifan rata-rata", "partisipasi siswa rata-ratanya gimana", "berapa partisipasi rata-rata kelas ini",
+        "rata-rata kontribusi siswa berapa", "berapa sih partisipasi rata-rata", "seberapa tinggi partisipasi siswa secara umum", "berapa keaktifan rata-rata anak-anak", "berapa rata-rata aktifnya siswa",
+        "berapa rata-rata anak yang aktif", "rata-rata anak aktif gak sih", "berapa tingkat partisipasi rata-rata", "berapa nilai kontribusi rata-rata", "berapa angka rata-rata partisipasi",
+        "rata-rata keterlibatan siswa gimana", "berapa skor keaktifan rata-rata", "rata-rata siswa berpartisipasi seberapa", "berapa angka kontribusi rata-rata", "berapa nilai rata-rata keterlibatan",
+        "rata-rata interaksi siswa berapa", "berapa rata-rata keterlibatan dalam kelas", "berapa nilai rata-rata interaksi", "berapa rata-rata respon dari siswa", "berapa kontribusi siswa secara rata-rata",
+        "rata-rata keaktifan murid berapa", "berapa nilai rata-rata kontribusi", "berapa persen partisipasi rata-rata", "berapa rata-rata anak berkontribusi", "seberapa aktif kelas ini rata-rata"
+      ],
+      "responses": ["Rata-rata partisipasi siswa adalah: {value}."]
+    },
+
+    {
+      "tag": "grade_jumlah",
+      "patterns": [
+        "Berapa siswa yang dapat nilai A", "Berapa siswa yang dapat B", "Berapa siswa yang dapat C", "Berapa siswa yang dapat D", "Berapa siswa yang dapat F",
+        "Jumlah yang nilainya A", "Jumlah yang nilainya B", "Jumlah yang nilainya C", "Jumlah yang nilainya D", "Jumlah yang nilainya F",
+        "Nilai A didapat berapa orang", "Nilai B didapat berapa orang", "Nilai C didapat berapa orang", "Nilai D didapat berapa orang", "Nilai F didapat berapa orang",
+        "Yang dapat A ada berapa", "Yang dapat B ada berapa", "Yang dapat C ada berapa", "Yang dapat D ada berapa", "Yang dapat F ada berapa",
+        "Ada berapa siswa yang nilainya A", "Ada berapa siswa yang nilainya B", "Ada berapa siswa yang nilainya C", "Ada berapa siswa yang nilainya D", "Ada berapa siswa yang nilainya F",
+        "Siapa saja yang dapat A (jumlahnya)", "Siapa yang nilainya B (berapa orang)", "Berapa yang lulus dengan A", "Berapa siswa dapat B tahun ini", "Berapa anak yang dapat C",
+        "Bisa info jumlah siswa nilai A", "Bisa info jumlah siswa nilai B", "Bisa info jumlah siswa nilai C", "Bisa info jumlah siswa nilai D", "Bisa info jumlah siswa nilai F",
+        "Tolong tampilkan jumlah nilai A", "Tolong tampilkan jumlah nilai B", "Tolong tampilkan jumlah nilai C", "Tolong tampilkan jumlah nilai D", "Tolong tampilkan jumlah nilai F"
+      ],
+      "responses": ["Jumlah siswa yang mendapatkan nilai/grade {grade} adalah {value}"]
+    },
+    {
+      "tag": "kehadiran_terendah",
+      "patterns": [
+        "siapa yang kehadirannya paling rendah", "kehadiran paling rendah siapa", "siapa yang punya kehadiran terendah", "kehadiran terendah siapa", "siapa yang absen paling banyak",
+        "siapa yang kehadiran terendah di kelas", "kehadiran terendah di kelas siapa", "siapa yang paling jarang hadir", "siapa yang kehadirannya paling sedikit", "siswa dengan kehadiran terendah",
+        "siapa yang hadir paling sedikit", "siapa yang absen paling sering", "siapa yang kehadirannya paling kecil", "kehadiran paling rendah di kelas siapa", "siapa yang paling jarang masuk",
+        "siapa yang paling sering absen", "siapa yang kehadirannya paling minim", "siapa yang punya kehadiran paling buruk", "siapa yang jarang masuk kelas", "kehadiran siapa paling sedikit",
+        "siapa yang hadir paling jarang", "siapa yang kehadirannya paling sedikit di semester ini", "siapa yang sering bolos", "siapa yang hadir paling sedikit di kelas ini", "siapa yang sering absen",
+        "siapa yang kehadirannya paling sedikit semester ini", "siswa yang kehadirannya paling rendah", "siapa yang kehadirannya paling tidak bagus", "siapa yang sering terlambat", "siapa yang bolos paling banyak",
+        "kehadiran siapa yang paling rendah semester ini", "siapa yang kehadirannya paling buruk di kelas", "siapa yang paling jarang hadir di kelas", "siapa yang sering tidak hadir", "kehadiran terendah di kelas siapa",
+        "siapa yang paling jarang datang", "kehadiran yang paling buruk siapa", "siapa yang paling sering tidak hadir", "siapa yang bolos paling sering"
+      ],
+      "responses": ["Siswa dengan kehadiran di bawah 75% adalah: {email}."]
+    },
+
+    {
+      "tag": "kehadiran_tertinggi",
+      "patterns": [
+        "siapa yang kehadirannya paling tinggi", "kehadiran paling tinggi siapa", "siapa yang punya kehadiran tertinggi", "kehadiran tertinggi siapa", "siapa yang paling sering hadir",
+        "siapa yang kehadiran tertinggi di kelas", "kehadiran tertinggi di kelas siapa", "siapa yang paling rajin hadir", "siapa yang kehadirannya paling banyak", "siswa dengan kehadiran tertinggi",
+        "siapa yang hadir paling sering", "siapa yang kehadirannya paling besar", "siapa yang kehadirannya paling maksimal", "kehadiran paling tinggi di kelas siapa", "siapa yang paling konsisten hadir",
+        "siapa yang hadir paling banyak", "siapa yang kehadirannya paling sempurna", "siapa yang punya kehadiran terbaik", "siapa yang paling rajin datang", "kehadiran siapa paling banyak",
+        "siapa yang hadir paling sering di semester ini", "siapa yang kehadirannya paling konsisten", "siapa yang kehadirannya paling bagus", "siapa yang hadir paling banyak di kelas ini", "siapa yang paling sering hadir di kelas",
+        "siapa yang kehadirannya paling baik", "siapa yang hadir hampir setiap hari", "siapa yang kehadirannya hampir sempurna", "siapa yang jarang absen", "siapa yang hadir paling rutin",
+        "kehadiran siapa yang paling tinggi semester ini", "siapa yang kehadirannya paling baik di kelas", "siapa yang hadir paling rajin", "siapa yang kehadirannya hampir tanpa absen", "siapa yang hadir paling sering di semester ini",
+        "siapa yang kehadirannya paling lengkap", "siapa yang paling setia hadir", "kehadiran tertinggi di kelas siapa", "siapa yang hadir paling sempurna"
+      ],
+      "responses": ["Kehadiran tertinggi adalah {value}%, oleh {email}."]
+    },
+    
+    {
+      "tag": "kehadiran_rata_rata",
+      "patterns": [
+        "Berapa rata-rata kehadiran?", "Rata-rata hadir berapa?", "Kehadiran rata-rata?", "Berapa persen kehadiran?", "Rata kehadiran siswa?",
+        "Tunjukkan rata-rata kehadiran", "Presentase hadir rata-rata?", "Rata-rata kehadiran siswa?", "Kehadiran average berapa?", "Berapa average hadir?",
+        "Mean kehadiran berapa?", "Rata-rata absen siswa?", "Berapa presentase rata-rata hadir?", "Hadir rata-rata berapa?", "Berapa mean dari hadir?",
+        "Berapa rata-rata presentase hadir?", "Rata-rata persen kehadiran?", "Kehadiran rata-rata siswa berapa?", "Berapa rata absen?", "Berapa rata-rata siswa masuk?"
+      ],
+      "responses": ["Rata-rata kehadiran siswa adalah {value}%."]
+    },
+
+    {
+      "tag": "persentase_lulus",
+      "patterns": [
+        "berapa persen yang lulus", "berapa banyak yang lulus", "berapa % yang lulus", "berapa persentase kelulusan", "berapa tingkat kelulusan",
+        "berapa proporsi siswa yang lulus", "berapa jumlah kelulusan", "berapa rasio kelulusan", "berapa persen siswa lulus", "berapa banyak siswa lulus",
+        "berapa persen yang berhasil lulus", "berapa persen yang tidak gagal", "berapa tingkat keberhasilan", "berapa persen yang lewat", "berapa banyak yang lewat",
+        "berapa siswa lulus", "berapa yang tidak gagal", "berapa persen yang lolos", "berapa persen kelulusan siswa", "berapa banyak kelulusan terjadi",
+        "berapa persen keberhasilan siswa", "berapa persen nilai lulus", "berapa yang nilainya cukup untuk lulus", "berapa yang memenuhi syarat lulus", "berapa siswa yang berhasil",
+        "berapa persen yang capai nilai lulus", "berapa siswa dapat nilai lulus", "berapa persentase siswa berhasil", "berapa persen murid lulus", "berapa persen mahasiswa lulus",
+        "berapa siswa yang lulus ujian", "berapa persen kelulusan ujian", "berapa yang lolos ujian", "berapa tingkat keberhasilan ujian", "berapa persen peserta lulus",
+        "berapa persen yang berhasil lulus semua mata kuliah", "berapa siswa yang tidak remedial", "berapa banyak yang lulus tanpa remedial", "berapa persen lulus penuh", "berapa lulus dengan nilai cukup"
+      ],
+      "responses": ["Persentase siswa yang lulus adalah: {value}%."]
+    },
+
+    {
+      "tag": "tugas_rata_rata",
+      "patterns": [
+        "Berapa rata-rata nilai tugas?", "Rata-rata assignments berapa?", "Tugas rata-rata berapa?", "Nilai tugas rata-rata?", "Rata tugasnya berapa?",
+        "Tunjukkan rata-rata tugas", "Berapa nilai rata-rata tugas?", "Assignments rata-rata?", "Berapa average tugas?", "Tugas average-nya berapa?",
+        "Berapa skor rata-rata tugas?", "Rata-rata skor assignment?", "Rata tugas siswa?", "Nilai rata-rata tugas siswa?", "Rata-rata nilai assignments?",
+        "Average nilai tugas?", "Skor assignments rata-rata?", "Berapa tugas average?", "Assignments mean berapa?", "Berapa mean dari tugas?"
+      ],
+      "responses": ["Rata-rata nilai assignments adalah {value}."]
+    },
+    {
+      "tag": "nilai_midterm_tertinggi",
+      "patterns": [
+        "Siapa yang nilai midterm-nya paling tinggi?", "Nilai midterm tertinggi siapa?", "Siapa yang dapat nilai UTS tertinggi?", "UTS paling tinggi siapa?", "Siapa yang skornya paling tinggi di midterm?",
+        "Siapa nilai UTS-nya paling besar?", "Siapa yang terbaik di UTS?", "Skor midterm tertinggi siapa?", "Siapa nilai midterm-nya paling bagus?", "Siapa yang ranking atas di midterm?",
+        "Nilai UTS paling besar siapa?", "Siapa dengan skor UTS tertinggi?", "Siapa peringkat pertama di UTS?", "Siapa yang unggul di midterm?", "Siapa yang dapet nilai tertinggi di UTS?",
+        "Siapa nilai UTS-nya tinggi banget?", "Siapa ranking atas UTS?", "Midterm siapa paling bagus?", "Nilai tertinggi untuk midterm siapa?", "Siapa paling unggul di UTS?",
+        "Siapa jago UTS?", "Siapa yang nilainya paling oke di midterm?", "UTS siapa yang paling tinggi?", "Siapa top scorer midterm?", "Siapa yang skornya maksimal di UTS?",
+        "Nilai UTS tertinggi didapat siapa?", "Siapa yang dapet nilai midterm paling bagus?", "Siapa paling jago UTS-nya?", "Siapa yang dapat nilai UTS sempurna?", "Nilai UTS sempurna siapa?",
+        "Siapa yang gak salah di UTS?", "UTS siapa paling sempurna?", "Siapa top ranking midterm?", "Siapa dapat nilai paling tinggi di UTS?", "Nilai tertinggi midterm siswa siapa?",
+        "Siapa paling tinggi nilainya di UTS?", "Siapa murid dengan UTS tertinggi?", "Siapa yang nilainya mantap di midterm?", "Nilai midterm terbaik siapa?", "Siapa peraih nilai UTS tertinggi?"
+      ],
+      "responses": ["Nilai midterm tertinggi adalah {value}, diperoleh oleh {email}."]
+    },
+
+    {
+      "tag": "nilai_midterm_terendah",
+      "patterns": [
+        "siapa yang dapat uts terendah", "nilai uts terendah siapa", "siapa yang paling rendah nilainya di uts", "siapa yang nilainya jelek di uts", "siapa nilai paling kecil uts",
+        "siapa yang performanya paling buruk di uts", "siapa yang paling turun nilainya di uts", "siapa yang gagal di uts", "siapa yang paling jelek nilainya di uts", "siapa yang dapet skor terendah uts",
+        "siapa nilai uts paling kecil", "siapa yang paling rendah skornya di uts", "siapa yang nilainya buruk di uts", "nilai uts paling jelek siapa", "siapa yang paling tidak bagus di uts",
+        "siapa yang dapet skor rendah di uts", "siapa yang nilai utsnya parah", "siapa yang nilai utsnya paling rendah", "siapa ranking bawah uts", "siapa yang hasil utsnya paling rendah",
+        "siapa yang nilainya rendah banget di midterm", "siapa yang posisi bawah di midterm", "siapa yang kesulitan di midterm", "siapa yang gagal total di midterm", "siapa nilai midterm paling mengecewakan",
+        "siapa yang dapet nilai midterm paling kecil", "siapa yang paling jelek performanya di midterm", "siapa nilai midtermnya hancur", "siapa nilai midtermnya paling rendah banget", "siapa peringkat akhir midterm",
+        "siapa yang underperform di midterm", "siapa yang nilai midtermnya paling jeblok", "siapa nilai midtermnya anjlok", "siapa yang paling payah di midterm", "siapa yang tidak lulus midterm",
+        "siapa dengan nilai midterm paling rendah", "siapa skor midtermnya rendah banget", "nilai midterm terburuk siapa", "siapa yang gagal banget di midterm", "siapa nilai midtermnya zonk",
+        "nilai uts terendah", "nilai uts paling rendah", "nilai midterm terendah", "Nilai Midterm Terendah"
+      ],
+      "responses": ["Nilai midterm terendah adalah {value}, diperoleh oleh {email}."]
+    },
+
+    {
+      "tag": "nilai_midterm_rata_rata",
+      "patterns": [
+       "berapa rata-rata nilai midterm", "berapa nilai rata-rata uts", "rata-rata midterm berapa", "rata-rata uts berapa", "berapa nilai tengah keseluruhan",
+        "berapa rerata nilai midterm", "berapa rerata nilai uts", "berapa nilai rata-rata ujian tengah", "nilai midterm rata-rata berapa", "nilai uts rata-rata berapa",
+        "rata-rata midterm kelas ini", "rata-rata uts kelas ini", "berapa overall nilai midterm", "berapa overall nilai uts", "berapa mean nilai midterm",
+        "berapa nilai mean uts", "berapa nilai rata rata mid", "nilai tengah semester rata-rata", "berapa nilai midterm rata", "berapa nilai uts rata",
+        "rata-rata ujian tengah semester", "nilai rata-rata uts berapa", "nilai rata-rata mid berapa", "berapa statistik rata-rata uts", "berapa statistik midterm",
+        "berapa average nilai uts", "berapa average nilai midterm", "nilai average uts berapa", "average midterm berapa", "average uts berapa",
+        "berapa total rata-rata midterm", "berapa total rata-rata uts", "berapa nilai tengah rata-rata", "berapa nilai rata-rata tes tengah", "nilai tengah keseluruhan berapa",
+        "berapa distribusi rata-rata uts", "berapa distribusi rata-rata mid", "berapa nilai normal uts", "berapa nilai normal midterm", "berapa nilai umum uts"
+      ],
+      "responses": ["Nilai rata-rata midterm adalah {value}"]
+    },
+
+    {
+      "tag": "nilai_final_terendah",
+      "patterns": [
+        "siapa nilai uas paling kecil", "nilai uas paling rendah", "nilai akhir paling rendah", "siapa yang dapat nilai final paling rendah", "final siapa yang paling kecil",
+        "nilai akhir siapa paling kecil", "siapa nilai uas terkecil", "nilai final terkecil siapa", "siapa yang dapat uas terendah", "nilai final paling kecil",
+        "siapa dapat nilai akhir terkecil", "siapa nilai final terendah", "siapa yang uas-nya paling kecil", "nilai final siswa terendah", "nilai paling rendah untuk uas",
+        "siapa yang dapat nilai akhir terendah", "nilai final paling rendah siapa", "siapa yang dapet final paling kecil", "final score paling rendah siapa", "nilai akhir terkecil"
+      ],
+      "responses": ["Nilai finals/uas terendah adalah {value}, dimiliki oleh {email}."]
+    },
+    
+    {
+      "tag": "nilai_final_tertinggi",
+      "patterns": [
+        "siapa nilai uas paling tinggi", "nilai uas tertinggi", "nilai akhir paling tinggi", "siapa yang dapat nilai final paling tinggi", "final siapa yang paling tinggi",
+        "nilai akhir siapa paling besar", "siapa nilai uas terbesar", "nilai final terbesar siapa", "siapa yang dapat uas tertinggi", "nilai final paling tinggi",
+        "siapa dapat nilai akhir tertinggi", "siapa nilai final tertinggi", "siapa yang uas-nya paling tinggi", "nilai final siswa tertinggi", "nilai paling tinggi untuk uas",
+        "siapa yang dapat nilai akhir paling tinggi", "nilai final paling tinggi siapa", "siapa yang dapet final paling tinggi", "final score paling tinggi siapa", "nilai akhir tertinggi"
+      ],
+      "responses": ["Nilai finals/uas tertinggi adalah {value}, dimiliki oleh {email}."]
+    },
+
+    {
+      "tag": "nilai_final_rata_rata",
+      "patterns": [
+        "berapa rata-rata nilai final", "berapa nilai rata-rata uas", "rata-rata final berapa", "rata-rata uas berapa", "berapa nilai akhir rata-rata",
+        "berapa rerata nilai final", "berapa rerata nilai uas", "berapa nilai rata-rata ujian akhir", "nilai final rata-rata berapa", "nilai uas rata-rata berapa",
+        "rata-rata final kelas ini", "rata-rata uas kelas ini", "berapa overall nilai final", "berapa overall nilai uas", "berapa mean nilai final",
+        "berapa nilai mean uas", "berapa nilai rata rata akhir", "nilai akhir semester rata-rata", "berapa nilai final rata", "berapa nilai uas rata",
+        "rata-rata ujian akhir semester", "nilai rata-rata uas berapa", "nilai rata-rata final berapa", "berapa statistik rata-rata uas", "berapa statistik final",
+        "berapa average nilai uas", "berapa average nilai final", "nilai average uas berapa", "average final berapa", "average uas berapa",
+        "berapa total rata-rata final", "berapa total rata-rata uas", "berapa nilai akhir rata-rata", "berapa nilai rata-rata tes akhir", "nilai akhir keseluruhan berapa",
+        "berapa distribusi rata-rata uas", "berapa distribusi rata-rata final", "berapa nilai umum uas", "berapa nilai umum final", "berapa skor rata-rata uas"
+      ],
+      "responses": ["Nilai rata-rata finals/uas adalah {value}"]
+    },
+
+    {
+      "tag": "distribusi_nilai",
+      "patterns": [
+        "berapa sebaran grade", "tampilkan distribusi nilai", "distribusi grade gimana", "nilai tersebar gimana", "sebaran grade siswa",
+        "ada berapa A sampai D", "berapa jumlah masing masing grade", "jumlah tiap grade", "ada berapa tiap nilai huruf", "berapa orang tiap grade",
+        "rekap semua nilai huruf", "grade apa yang paling banyak", "bisa liat distribusi grade?", "berapa siswa dapat tiap grade", "grade tersebar gimana",
+        "berapa yang dapet tiap nilai", "bisa tampilkan sebaran nilai?", "tampilkan jumlah semua grade", "jumlah siswa tiap huruf", "distribusi skor huruf gimana"
+      ],
+      "responses": ["Distribusi nilai/grade: {value}"]
+    },
+    {
+      "tag": "jumlah_siswa",
+      "patterns": [
+        "Ada berapa siswa?", "Total jumlah siswa", "Jumlah murid di data", "ada brp siswa", "siswa ada berapa",
+        "Berapa banyak siswa?", "Total murid berapa?", "Jumlah keseluruhan siswa?", "mau tau dong jumlah siswa di sini",
+        "Siswa ada berapa?", "Tampilkan jumlah siswa", "Semuanya ada berapa orang?", "ada brp orang yang ikut", "siswanya ada berapa ya?",
+        "kira kira ada berapa siswa secara keseluruhan", "berapa jumlah siswa?", "jumlah siswa", "ada brp jumlah siswa?", "ada berapa siswa?",
+        "jumlah siswa di kelas"
+      ],
+      "responses": ["Jumlah total siswa adalah {value}."]
+    },
+    {
+      "tag": "nilai_total_rata_rata",
+      "patterns": [
+        "Berapa rata-rata total skor?", "Rata-rata nilai total berapa?", "Total score rata-rata?", "Berapa average total score?", "Skor total rata-rata berapa?",
+        "Tunjukkan rata-rata total nilai", "Nilai total rata-rata siswa?", "Berapa rata total score?", "Rata total nilai siswa?", "Berapa rata-rata skor akhir?",
+        "Rata-rata dari total nilai?", "Berapa nilai akhir rata-rata?", "Skor total average-nya?", "Mean nilai total berapa?", "Berapa mean dari skor total?",
+        "Total nilai siswa rata-rata?", "Rata-rata score semua siswa?", "Berapa total score siswa?", "Tingkat rata-rata skor akhir?", "Berapa average semua nilai?"
+      ],
+      "responses": ["Rata-rata nilai total siswa adalah {value}."]
+    },
+
+    {
+      "tag": "statistik_dataset",
+      "patterns": [
+        "Tampilkan statistik data",
+        "Tunjukkan statistik dataset",
+        "Saya ingin melihat statistik",
+        "Tampilkan grafik statistik",
+        "Lihat data statistik",
+        "Statistik datasetnya dong",
+        "Statistik datanya mana?",
+        "Bisa tunjukkan statistik data?",
+        "Perlihatkan grafik statistik",
+        "Tampilkan ringkasan statistik",
+        "Saya mau lihat statistik dataset",
+        "Tunjukkan analisis data",
+        "Statistik nilai dong",
+        "Lihat statistik keseluruhan",
+        "Statistik data tolong",
+        "Kasih grafik statistik data",
+        "Tampilkan data summary",
+        "Lihat summary dataset",
+        "Statistik keseluruhan mana?",
+        "Tampilkan informasi statistik"
+      ],
+      "responses": ["Berikut statistik lengkap:\n{value}"]
+    }
+  ]
+}
